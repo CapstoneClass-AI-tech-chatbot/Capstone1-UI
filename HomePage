@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OWL Tech Helper</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">OWL Tech Helper</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">AI Prompt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container text-center my-5">
+        <h1 class="fw-bold">OWL Tech Helper</h1>
+        <p class="text-muted">Your AI Assistant For All Things Tech</p>
+    </div>
+
+    <!-- Solution Section -->
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="border rounded p-4 text-center">
+                    <h5 class="mb-3">Pictured Solution Section From AI</h5>
+                    <div class="d-flex justify-content-center align-items-center" style="height: 150px; border: 1px solid #ddd;">
+                        <span>Image Placeholder</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="border rounded p-4">
+                    <p>Hi <strong>"Username here"</strong>, this is the solution I've come up with for your problem...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Section -->
+    <div class="container text-center my-5">
+        <form class="d-flex justify-content-center">
+            <input class="form-control w-50 me-2" type="search" placeholder="Enter your tech question here" aria-label="Search">
+            <button class="btn btn-danger" type="submit">Search</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm
