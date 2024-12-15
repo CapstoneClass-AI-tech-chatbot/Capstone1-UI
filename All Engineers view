@@ -11,7 +11,7 @@
             background-color: #f8f9fa;
         }
         .navbar {
-            background-color: #d9534f; /* Red Navbar */
+            background-color: #b02a2a; /* Red Navbar */
         }
         .navbar-brand, .nav-link {
             color: white !important;
