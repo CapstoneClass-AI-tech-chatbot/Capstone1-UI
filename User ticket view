@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OWL Tech Helper - My Tickets</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .navbar {
+            background-color: #b02a2a; /* Red Navbar */
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+        .content-panel {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 10px;
+        }
+        .btn-red {
+            background-color: #d9534f;
+            color: #fff;
+        }
+        .btn-red:hover {
+            background-color: #c9302c;
+            color: #fff;
+        }
+        .footer-bar {
+            background-color: #f8f9fa;
+            color: #6c757d;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">OWL Tech Helper</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">My Tickets</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Submit Ticket</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Main Content -->
+<div class="container mt-4">
+    <div class="content-panel">
+        <h4>My Tickets</h4>
+        
+        <!-- Search Bar -->
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Search tickets..." id="ticketSearch">
+            </div>
+            <div class="col-md-3">
+                <select class="form-select" id="filterStatus">
+                    <option value="all">Filter by Status</option>
+                    <option value="open">Open</option>
+                    <option value="in-progress">In Progress</option>
+                    <option value="resolved">Resolved</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <button class="btn btn-red w-100">Search</button>
+            </div>
+        </div>
+
+        <!-- Tickets Table -->
+        <table class="table table-striped table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>Priority</th>
+                    <th>Status</th>
+                    <th>Last Updated</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Sample User Tickets -->
+                <tr>
+                    <td>1</td>
+                    <td>Projector won't sync with laptop</td>
+                    <td><span class="badge bg-danger">High</span></td>
+                    <td><span class="badge bg-warning text-dark">Open</span></td>
+                    <td>2024-05-01</td>
+                    <td>
+                        <button class="btn btn-sm btn-red">View Details</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Office 365 installation help</td>
+                    <td><span class="badge bg-info text-dark">Medium</span></td>
+                    <td><span class="badge bg-success">Resolved</span></td>
+                    <td>2024-04-28</td>
+                    <td>
+                        <button class="btn btn-sm btn-red">View Details</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Registration portal keeps crashing</td>
+                    <td><span class="badge bg-warning text-dark">Low</span></td>
+                    <td><span class="badge bg-danger">Escalated</span></td>
+                    <td>2024-04-30</td>
+                    <td>
+                        <button class="btn btn-sm btn-red">View Details</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer-bar mt-4">
+    &copy; 2024 OWL Tech Helper. User Dashboard.
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
