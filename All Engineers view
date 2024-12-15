@@ -52,8 +52,6 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Logs</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Diagnostics</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">All Tickets</a></li>
             </ul>
         </div>
