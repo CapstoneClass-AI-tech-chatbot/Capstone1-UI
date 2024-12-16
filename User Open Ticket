@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OWL Tech Helper - Open New Ticket</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+        }
+
+        #sidebar {
+            width: 250px;
+            background-color: #f8f9fa;
+            border-right: 1px solid #ddd;
+            height: 100vh;
+            overflow-y: auto;
+            position: fixed;
+        }
+
+        #sidebar h5 {
+            padding: 1rem;
+            border-bottom: 1px solid #ddd;
+            background-color: #fff;
+        }
+
+        #sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #sidebar li {
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid #ddd;
+        }
+
+        #sidebar li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        #sidebar li a:hover {
+            color: #dc3545;
+        }
+
+        #content {
+            margin-left: 250px;
+            padding: 2rem;
+            width: calc(100% - 250px);
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: flex-start;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 250px;
+            width: calc(100% - 250px);
+            z-index: 1030;
+        }
+
+        .navbar + #content {
+            margin-top: 56px;
+        }
+
+        .card-container {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            margin-top: 3rem;
+        }
+
+        .card {
+            width: 350px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card-header {
+            background-color: #dc3545;
+            color: white;
+            font-weight: bold;
+            border-radius: 8px 8px 0 0;
+            padding: 1rem;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card-body button {
+            margin-top: auto;
+        }
+
+        .btn-outline-danger, .btn-danger {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div id="sidebar">
+        <h5>Dashboard Menu</h5>
+        <ul>
+            <li><a href="#">My Tickets</a></li>
+            <li><a href="#">Open New Ticket</a></li>
+
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div id="content">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">OWL Tech Helper</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <button class="btn btn-light text-danger border border-danger">AI Assistant</button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Page Header -->
+        <div class="text-center my-5">
+            <h1 class="fw-bold">Open New Ticket</h1>
+            <p class="text-muted">How would you like to proceed?</p>
+        </div>
+
+        <!-- Card Options -->
+        <div class="card-container">
+            <!-- AI Assistant Card -->
+            <div class="card">
+                <div class="card-header">Use AI Assistant</div>
+                <div class="card-body">
+                    <p>Our AI Assistant can help troubleshoot your issue before opening a ticket. Save time and get instant solutions!</p>
+                    <button class="btn btn-outline-danger">Ask AI Assistant</button>
+                </div>
+            </div>
+
+            <!-- Open New Ticket Card -->
+            <div class="card">
+                <div class="card-header">Open a Ticket</div>
+                <div class="card-body">
+                    <p>We highly recommend troubleshooting with the AI Assistant for quicker results. If you require additional support proceed to open a new ticket, and our team will help.</p>
+                    <button class="btn btn-danger">Open New Ticket</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
